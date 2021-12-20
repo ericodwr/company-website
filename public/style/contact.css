@@ -1,0 +1,100 @@
+@import url(./header.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.content {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 50vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content-img img {
+  width: 80%;
+}
+
+.content-title {
+  margin: 0 3rem;
+  /* display: flex;
+  flex-direction: column; */
+  height: 100%;
+}
+
+
+
+.title h1 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #765C4D;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
+}
+
+
+.email, .phone {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: #765C4D;
+}
+
+.email p {
+  margin-left: 25px;
+}
+.phone p {
+  margin-left: 25px;
+}
+.sosmed img {
+  margin: 0 20px;
+}
+
+
+@media (max-width:1411px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content > * {
+    margin-top: 50px;
+  }
+
+  .content-img {
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-img img {
+    width: 100%;
+  }
+
+  .content-title {
+    height: auto;
+  }
+
+  .content-title > * {
+    margin: 20px 0;
+  }
+
+  .contact > * {
+    margin: 10px 0;
+  }
+
+}

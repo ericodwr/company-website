@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  margin: 1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: blanchedalmond; */
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.logo img {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  /* justify-content: space-evenly; */
+  font-size: 24px;  
+  height: 55px;
+
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  list-style: none;
+  margin: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.links a:hover {
+  color: #F3BE8D;
+}
+
+
+.here {
+  font-weight: bolder;
+  color: #000;
+}
+
+
+
+.close {
+  display: none;
+}
+
+svg {
+  width: 2rem;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+
+.nav__toggle {
+  position: absolute;
+  margin: 2rem 1rem;
+  right: 0;
+  cursor: pointer;
+  display: none;
+
+}
+#nav__checkbox {
+  border: none;
+  background-color: blue;
+  width: 100px;
+}
+
+#nav__checkbox:checked ~ .list {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
+}
+
+
+
+
+
+
+@media (max-width:770px) {
+  .header {
+    flex-direction: column;
+    position: relative;
+    
+  }
+  .logo {
+    margin-right: auto;
+  }
+
+  .list {
+    height: auto;
+    display: none;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+
+}
